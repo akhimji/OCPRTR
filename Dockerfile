@@ -3,7 +3,8 @@
 #
 # The standard name for this image is openshift/origin-egress-router
 
-FROM sha256:406beb407566f3bb774dbf0e2983695add889af754011ced9bf8dfd09ea39220
+#FROM sha256:406beb407566f3bb774dbf0e2983695add889af754011ced9bf8dfd09ea39220
+FROM centos:latest
 
 LABEL com.redhat.component="openshift-enterprise-egress-router-docker"
 LABEL name="openshift3/ose-egress-router"

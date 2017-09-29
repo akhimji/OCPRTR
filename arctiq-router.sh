@@ -34,7 +34,9 @@ function setup_network() {
         ip route add "${EGRESS_GATEWAY}"/32 dev macvlan0
         ip route del default
         #ip route add default via "${EGRESS_GATEWAY}" dev macvlan0
-		ip route add 100.100.100.0/24	dev dev macvlan0
+	ip route add 100.100.100.0/24 dev macvlan0
+	ip route add 192.168.1.1/24 dev macvlan0
+	ip route add 192.168.2.1/24 dev macvlan0
     fi
 
     # Update neighbor ARP caches in case another node previously had the IP. (This is
